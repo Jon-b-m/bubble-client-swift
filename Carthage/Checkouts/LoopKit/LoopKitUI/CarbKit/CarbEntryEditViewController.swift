@@ -346,6 +346,8 @@ extension CarbEntryEditViewController: FoodTypeShortcutCellDelegate {
         var absorptionTime: TimeInterval?
 
         switch cell.selectionState {
+        case .dextro:
+            absorptionTime = defaultAbsorptionTimes?.dextro
         case .fast:
             absorptionTime = defaultAbsorptionTimes?.fast
         case .medium:

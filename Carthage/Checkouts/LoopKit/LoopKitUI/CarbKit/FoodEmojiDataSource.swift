@@ -11,6 +11,13 @@ public func CarbAbsorptionInputController() -> EmojiInputController {
 
 
 private class FoodEmojiDataSource: EmojiDataSource {
+    private static let dextro: [String] = {
+        var dextro = [
+            "🍬",
+        ]
+        
+        return dextro
+    }()
     private static let fast: [String] = {
         var fast = [
             "🍭", "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍",
@@ -18,7 +25,7 @@ private class FoodEmojiDataSource: EmojiDataSource {
             "🍅", "🥔", "🥕", "🌽", "🌶", "🥒", "🥗", "🍄",
             "🍞", "🥐", "🥖", "🥞", "🍿", "🍘", "🍙",
             "🍚", "🍢", "🍣", "🍡", "🍦", "🍧", "🍨",
-            "🍩", "🍪", "🎂", "🍰", "🍫", "🍬", "🍮",
+            "🍩", "🍪", "🎂", "🍰", "🍫", "🍮",
             "🍯", "🍼", "🥛", "☕️", "🍵",
             "🥥", "🥦", "🥨", "🥠", "🥧",
         ]
