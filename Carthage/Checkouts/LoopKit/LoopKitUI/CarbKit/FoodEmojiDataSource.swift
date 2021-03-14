@@ -68,9 +68,14 @@ private class FoodEmojiDataSource: EmojiDataSource {
     init() {
         sections = [
             EmojiSection(
+                title: LocalizedString("Dextro", comment: "Section title for dextrose"),
+                items: type(of: self).dextro,
+                indexSymbol: " 🍬 "
+            ),
+            EmojiSection(
                 title: LocalizedString("Fast", comment: "Section title for fast absorbing food"),
                 items: type(of: self).fast,
-                indexSymbol: " 🍭 "
+                indexSymbol: "🍞"
             ),
             EmojiSection(
                 title: LocalizedString("Medium", comment: "Section title for medium absorbing food"),
